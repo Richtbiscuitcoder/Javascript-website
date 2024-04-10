@@ -51,7 +51,7 @@ h1 {
 }
 
 .cards .active {
-    background: linear-gradient(rgb(151, 147, 202), rgb(97, 93, 156));
+    background: linear-gradient(rgb(177, 173, 236), rgb(120, 113, 230));
     width: 400px;
     height: 500px;
     border-radius: 10px;
@@ -142,12 +142,13 @@ li {
     margin-left: 12%;
     height: 35px;
     width: 300px;
-    background: linear-gradient(rgb(151, 147, 202), rgb(97, 93, 156));
+    background: linear-gradient(rgb(177, 173, 236), rgb(120, 113, 230));
     border-radius: 10px;
     font-size: 20px;
     font-family: inherit;
     font-weight: bold;
     color: white;
+    border: 0;
    
 }
 
@@ -164,4 +165,5 @@ li {
     font-size: 20px;
     font-weight: bold;
     color: rgb(97, 93, 156);
+    border:0;
 }
