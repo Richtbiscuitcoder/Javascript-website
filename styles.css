@@ -12,6 +12,8 @@ body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -21,8 +23,11 @@ h1 {
 }
 
 .pricing {
-    font-size: larger;
-    font-weight: bold;
+    font-size: large;
+    font-weight: normal;
+    margin-top: 100px;
+    color: rgb(95, 95, 95);
+
     
 }
 
@@ -30,16 +35,58 @@ h1 {
     display: flex;
     justify-content: center;
     border: 10px;
+    gap: 10px;
+}
+
+#toggle {
+    display: none;
+}
+
+.sub {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background: linear-gradient(rgb(177, 173, 236), rgb(120, 113, 230));
+    position: relative;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 10px;
+    
+}
+
+label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3ms;
+}
+
+.container {
+    height:750px;
+    width:1400px;
+    background-color: whitesmoke;
+    display: block;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cards {
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
     height: 600px;
     width: 1400px;
     margin: auto;
-    margin-left: 18%;
+    
 }
 
 .cards .shadow {
@@ -47,16 +94,23 @@ h1 {
     height: 500px;
     width: 400px;
     border-radius: 10px;
-    color: rgb(97, 93, 156);;
+    color: rgb(95, 94, 94);
+    margin-top: 30px;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .cards .active {
     background: linear-gradient(rgb(177, 173, 236), rgb(120, 113, 230));
     width: 400px;
-    height: 500px;
+    height: 550px;
     border-radius: 10px;
     color: white;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .pack {
     display: flex;
@@ -73,6 +127,7 @@ h1 {
     padding: 50px;
     font-size: 50px;
     margin-right: 17%;
+    font-weight: bolder;
 
 }
 
@@ -166,4 +221,15 @@ li {
     font-weight: bold;
     color: rgb(97, 93, 156);
     border:0;
+}
+
+@media  screen and (max-width: 992px){
+    .container {
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding: 0.5rem;
+    }
 }
