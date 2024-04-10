@@ -14,6 +14,8 @@ body {
     font-style: normal;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    border-left: 5px;
 }
 
 h1 {
@@ -25,7 +27,7 @@ h1 {
 .pricing {
     font-size: large;
     font-weight: normal;
-    margin-top: 100px;
+    margin-top: 10px;
     color: rgb(95, 95, 95);
 
     
@@ -72,10 +74,8 @@ label::before {
     background-color: whitesmoke;
     display: block;
     align-items: center;
-    margin-left: 200px;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .cards {
@@ -84,9 +84,7 @@ label::before {
     flex-wrap: wrap;
     padding: 20px;
     height: 600px;
-    width: 1400px;
-    margin: auto;
-    
+    width: 1400px;    
 }
 
 .cards .shadow {
@@ -98,6 +96,7 @@ label::before {
     margin-top: 30px;
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cards .active {
@@ -109,6 +108,7 @@ label::before {
     margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -129,6 +129,10 @@ label::before {
     margin-right: 17%;
     font-weight: bolder;
 
+}
+
+ul {
+    justify-content: center;
 }
 
 li {
@@ -221,15 +225,4 @@ li {
     font-weight: bold;
     color: rgb(97, 93, 156);
     border:0;
-}
-
-@media  screen and (max-width: 992px){
-    .container {
-        flex-direction: column;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0.5rem;
-        padding: 0.5rem;
-    }
 }
