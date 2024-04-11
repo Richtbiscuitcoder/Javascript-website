@@ -80,6 +80,7 @@ input:checked + label::before {
     display: block;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .cards {
@@ -98,7 +99,7 @@ input:checked + label::before {
     width: 400px;
     border-radius: 10px;
     color: rgb(95, 94, 94);
-    margin-top: 30px;
+    margin-top: 58px;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
