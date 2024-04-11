@@ -12,11 +12,10 @@
         <h1>Our Pricing</h1>
         <div class="toggle">
           <label>Anually</label>
-          <div class="toggle-btn">
-            <input type="checkbox" class="checkbox" id="toggle" title="c-box">
-            <label class="switch" id="sub" for="toggle">
-              <div class="circle"></div>
-            </label>
+            <div class="toggle-btn">
+              <span class="slider round"></span>
+              <input type="checkbox" class="checkbox" id="toggle" title="c-box" checked>
+              <label class="switch" id="input-label" for="toggle"></label>
           </div>
           <label>Monthly</label>
         </div>
@@ -26,7 +25,7 @@
         <div class="card shadow">
           <ul>
             <li class="pack">Basic</li>
-            <li id="basic" class="price">&dollar;19.99</li>
+            <li id="basic" class="price" id="basic">&dollar;<span>19.99</span></li>
             <li class="storage">500 GB Storage</li>
             <li class="users">2 Users Allowed</li>
             <li class="send">Send up tp 3gb</li>
@@ -36,7 +35,7 @@
         <div class="card active">
           <ul>
             <li class="pack">Professional</li>
-            <li id="professional" class="price">&dollar;24.99</li>
+            <li id="professional" class="price">&dollar;<span>24.99</span></li>
             <li class="storage-middle">1 TB Storage</li>
             <li class="users-middle">2 Users Allowed</li>
             <li class="send-middle">Send up tp 10gb</li>
@@ -46,7 +45,7 @@
         <div class="card shadow">
           <ul>
             <li class="pack">Master</li>
-            <li id="master" class="price">&dollar;39.99</li>
+            <li id="master" class="price">&dollar;<span>39.99</span></li>
             <li class="storage">2 TB Storage</li>
             <li class="users">10 Users Allowed</li>
             <li class="send">Send up tp 20gb</li>

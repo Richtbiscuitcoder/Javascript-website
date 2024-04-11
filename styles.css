@@ -37,6 +37,7 @@ h1 {
     gap: 10px;
 }
 
+
 #toggle {
     display: none;
 }
@@ -52,6 +53,8 @@ h1 {
     border-radius: 10px;
 }
 
+
+
 label::before {
     content: "";
     position: absolute;
@@ -61,9 +64,15 @@ label::before {
     height: 14px;
     background-color: white;
     border-radius: 50%;
-    transition: 0.3ms;
+    transition: 0.4s;
 }
 
+
+input:checked + label::before {
+    left: 23px;
+  }
+
+  
 .container {
     height:750px;
     width:1500px;
@@ -79,7 +88,8 @@ label::before {
     flex-wrap: wrap;
     padding: 20px;
     height: 600px;
-    width: 1400px;    
+    width: 1400px;  
+    margin: auto;  
 }
 
 .cards .shadow {
@@ -207,6 +217,10 @@ li {
    
 }
 
+.button:hover {
+    opacity: 80%;
+}
+
 .button-middle {
     display: flex;
     justify-content: center;
@@ -221,6 +235,10 @@ li {
     font-weight: bold;
     color: rgb(97, 93, 156);
     border:0;
+}
+
+.button-middle:hover {
+    opacity: 80%;
 }
 
 @media only screen and (max-width: 800px) {
