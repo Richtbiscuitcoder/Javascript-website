@@ -22,9 +22,9 @@ document.querySelector('#input-label').addEventListener('click', ()=>{
         document.querySelector('#master span').textContent = master
         
     } else {
-        document.querySelector('#basic span').textContent = basic * 12
-        document.querySelector('#professional span').textContent = professional * 12
-        document.querySelector('#master span').textContent = Math.round(master * 12)
+        document.querySelector('#basic span').textContent = Math.round(basic * 11)
+        document.querySelector('#professional span').textContent = Math.round(professional * 11)
+        document.querySelector('#master span').textContent = Math.round(master * 11)
     }
 })
 
